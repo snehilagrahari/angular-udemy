@@ -1,0 +1,11 @@
+div{
+    background : rgb(255, 197, 197);
+    width : fit-content;
+    padding : 10px 15px;
+    font-size : 20px;
+    color : red;
+    border-radius : 7px;
+    border : 2px solid red;
+    border-left: 10px solid red;
+    margin : 10px;
+}

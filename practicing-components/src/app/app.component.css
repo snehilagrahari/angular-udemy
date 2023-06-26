@@ -1,0 +1,29 @@
+h1{
+    margin : auto;
+    color : dodgerblue;
+    width : fit-content;
+    font-size : 35px;
+    border-radius : 10px;
+    background : lightgray;
+    border : 2px solid dodgerblue;
+    padding : 10px 15px;
+}
+h2{
+    margin : 10px auto;
+    color : orange;
+    width : fit-content;
+    font-size : 22px;
+    border-radius : 8px;
+    background : rgb(255, 217, 193);
+    border : 2px solid orange;
+    padding : 10px 15px;
+}
+
+.flex{
+    padding : 20px;
+    display : flex;
+    justify-content: space-evenly;
+    width : 100%;
+    background : lightblue;
+    border : 1px solid black;
+}

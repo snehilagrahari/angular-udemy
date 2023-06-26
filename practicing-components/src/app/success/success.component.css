@@ -1,0 +1,13 @@
+
+
+div{
+    background : rgb(216, 255, 216);
+    width : fit-content;
+    padding : 10px 15px;
+    font-size : 20px;
+    color : green;
+    border-radius : 7px;
+    border : 2px solid green;
+    border-left: 10px solid green;
+    margin : 10px;
+}
