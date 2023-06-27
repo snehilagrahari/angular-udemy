@@ -1,0 +1,7 @@
+<div class="container">
+  <h1>Directives</h1>
+  <hr />
+  <button (click)="buttonClick()">Display Details</button>
+  <p *ngIf="visible">Hey there I am Visible Now. Click to Hide me!</p>
+  <p *ngFor="let number of clickArr" [ngStyle]="{backgroundColor : number>5?'blue':'none'}" [ngClass]="{whiteColor:number>5}">{{number}}</p>
+</div>
