@@ -1,0 +1,13 @@
+<h1>Data Binding</h1>
+<div class="container">
+  <div class="form-box">
+    <!-- two-way-binding -->
+    <input type="text" [(ngModel)]="username">  
+    <p>
+      <!-- string-interpolation -->
+      {{ username }} 
+    </p>
+    <!-- property-binding + event-binding -->
+    <button [disabled]="username.length===0" (click)="resetUserName()">Reset</button> 
+  </div>
+</div>
