@@ -1,0 +1,8 @@
+<app-game-control
+(eventLaunch)="event()">
+  <p>Count : {{eventNumbers.length}}</p>
+</app-game-control>
+<div *ngFor="let eventItem of eventNumbers">
+  <app-odd *ngIf="eventItem%2!=0"></app-odd>
+  <app-even *ngIf="eventItem%2==0"></app-even>
+</div>
