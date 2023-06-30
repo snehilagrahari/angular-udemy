@@ -20,20 +20,12 @@ export class AppComponent {
     }
   ];
   
-  addedNewServer(serverDetails : {name : string, content : string}){
+  addedNewServer(serverDetails : {type : string, name : string, content : string}){
     this.serverElements.push({
-      type : "server",
+      type : serverDetails.type,
       name : serverDetails.name,
       content : serverDetails.content
     })
   }
 
-  addedNewBlueprint(serverDetails : {name : string, content : string}) : void{
-    this.serverElements.push({
-      type : "blueprint",
-      name : serverDetails.name,
-      content : serverDetails.content
-    })
-  }
-  
 }
