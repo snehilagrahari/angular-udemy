@@ -8,11 +8,13 @@ import { UserService } from '../users.service';
   templateUrl: './user.component.html',
   styleUrls: ['./user.component.css']
 })
-export class UserComponent implements OnInit {
+export class UserComponent {
   user: {id: number, name: string} | undefined;
   allowEdit : string = '0';
 
-  constructor(private route:ActivatedRoute, private userService : UserService) { }
+  constructor(private route:ActivatedRoute, private userService : UserService) { 
+    
+  }
 
   ngOnInit() {
     this.user = this.userService.getUser(+this.route.snapshot.params['id']);
