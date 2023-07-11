@@ -1,0 +1,7 @@
+<h2>Hey there Learning Pipes
+</h2>
+
+<input type="text" [(ngModel)]="filterStr" />
+<div *ngFor="let word of words|filter:filterStr">
+  <h1>{{ word | slice:7}}</h1>
+</div>
