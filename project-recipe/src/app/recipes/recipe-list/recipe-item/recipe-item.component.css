@@ -1,0 +1,17 @@
+#container{
+    background : rgb(239, 239, 239);
+    padding : 20px;
+    border : 1px solid lightgrey;
+    display : flex;
+    gap : 30px;
+    justify-content: start;
+    flex-direction : row-reverse
+}
+#container>div:nth-child(2){
+    width : 120px;
+    display : grid;
+    place-items: center;
+}
+img{
+    max-height : 100px;
+}

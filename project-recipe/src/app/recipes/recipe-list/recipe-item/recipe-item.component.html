@@ -1,1 +1,14 @@
-<p>recipe-item works!</p>
+<div id="container">
+    <div>
+        <h3>{{recipeDetails.name}}</h3>
+        <p>
+            <strong>Ingredients : </strong> 
+            <span *ngFor="let ingredient of recipeDetails.ingredients">
+                {{ ingredient.name }} | 
+            </span> 
+        </p>
+    </div>
+    <div>
+        <img [src]="recipeDetails.imageUrl" [alt]="recipeDetails.name" class="img-responsive">
+    </div>
+</div>

@@ -1,0 +1,21 @@
+.ingredient-item{
+    width : 100%;
+    margin : 10px 0px;
+    background : rgb(255, 226, 215);
+    border : 1px solid #fb9a5a;
+    /* min-height: 50px; */
+    font-size : 17px;
+}
+
+.btn {
+    margin : 10px 0px;
+}
+
+.list-group-item{
+    color : #fb9a5a;
+}
+
+.ingredient-input{
+    display : flex;
+    gap : 10px;
+}
