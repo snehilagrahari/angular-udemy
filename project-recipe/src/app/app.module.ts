@@ -17,6 +17,9 @@ import { RecipeSrevice } from './recipes/recipe.service';
 import { AddRecipeComponent } from './recipes/add-recipe/add-recipe.component';
 import { ReactiveFormsModule } from '@angular/forms'
 import { CanDeactivateGuard } from './can-deactivate.guard';
+import { ShoppingListService } from './shopping-list/shopping-list.service';
+import { ShoppingListItemComponent } from './shopping-list/shopping-list-item/shopping-list-item.component';
+
 
 const routes : Routes = [
   {
@@ -59,14 +62,15 @@ const routes : Routes = [
     DrawerOpenDirective,
     PageNotFoundComponent,
     NoRecipeComponent,
-    AddRecipeComponent
+    AddRecipeComponent,
+    ShoppingListItemComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes), 
     ReactiveFormsModule
   ],
-  providers: [RecipeSrevice, CanDeactivateGuard],
+  providers: [RecipeSrevice, CanDeactivateGuard, ShoppingListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

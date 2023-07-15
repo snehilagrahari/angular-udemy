@@ -21,8 +21,8 @@ export class AddRecipeComponent implements OnInit, CanComponentDeactivate{
       name : new FormControl(null, [Validators.required]),
       imageUrl : new FormControl(null, [Validators.required]),
       ingredientItem : new FormGroup({
-        name : new FormControl(null),
-        qty : new FormControl(null)
+        name : new FormControl(null, Validators.required),
+        qty : new FormControl(null, Validators.required)
       })
      }); 
   }
@@ -55,7 +55,7 @@ export class AddRecipeComponent implements OnInit, CanComponentDeactivate{
   }
 
   canDeactivate(){
-    if(this.newRecipe.value.name !== "" || this.newRecipe.value.imageUrl!==""){
+    if(this.newRecipe.touched && this.newRecipe.dirty){
       return confirm('Changes you made to this page will not be saved. Do you really want to exit?')
     }
     return true

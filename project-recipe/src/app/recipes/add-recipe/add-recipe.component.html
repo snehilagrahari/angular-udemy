@@ -31,7 +31,7 @@
                 <input type="text" class="form-control" formControlName="name" placeholder="Ingredient">
                 <input type="text" class="form-control" formControlName="qty" placeholder="Qty">
             </div>
-            <button type="button" class="btn" (click)="onAddIngredient()" [disabled]="">Add Ingredient</button>
+            <button type="button" class="btn" (click)="onAddIngredient()" [disabled]="!newRecipe.get('ingredientItem').valid">Add Ingredient</button>
         </div>
         <button class="btn btn-primary" [disabled]="!newRecipe.valid" type="submit">Add Recipe</button>
     </div>

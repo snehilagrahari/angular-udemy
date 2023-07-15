@@ -4,13 +4,18 @@
     border : 1px solid lightgrey;
     display : flex;
     gap : 30px;
-    justify-content: start;
-    flex-direction : row-reverse
+    justify-content: space-between;
+    flex-direction : row-reverse;
+    align-items: center;
 }
-#container>div:nth-child(2){
+#container>div:nth-child(3){
     width : 120px;
     display : grid;
     place-items: center;
+}
+#container:hover{
+    border : 1px solid #cf2129;
+    background : lightgray;
 }
 img{
     max-height : 100px;

@@ -1,0 +1,10 @@
+.row{
+    background : rgb(242, 242, 242);
+    align-items : center;
+    display : flex;
+    justify-content : space-between;
+}
+.col-xs-2{
+    display : grid;
+    place-items : center;
+}
